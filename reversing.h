@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-void decrypt_and_print(char to_decryp[], int size) {
+void decrypt_and_print1(char to_decryp[], int size) {
     
 
     for (int i = 0; i < size; i++) {
@@ -12,6 +12,12 @@ void decrypt_and_print(char to_decryp[], int size) {
         printf("%s\n", to_decryp);
 
     }
+
+}
+
+void decrypt_and_print2(char to_decryp[], int size) {
+
+    
 
 }
 
