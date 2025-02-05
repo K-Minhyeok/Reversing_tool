@@ -15,9 +15,15 @@ void decrypt_and_print1(char to_decryp[], int size) {
 
 }
 
-void decrypt_and_print2(char to_decryp[], int size) {
+void decrypt_and_print2(int to_decryp[]) {
 
-    
+//if ( ((unsigned __int8)(16 * *(_BYTE *)(a1 + i)& 0xF0) | ((int)*(unsigned __int8 *)(a1 + i) >> 4)) != byte_140003000[i] )
+
+    for (int i = 0; i < 27; i++) {
+        to_decryp[i]= ( (16*to_decryp[i]) & 0xF0 | (to_decryp[i]>>4) ) ;
+        printf("%c", to_decryp[i]);
+
+    }
 
 }
 
