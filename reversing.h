@@ -27,4 +27,21 @@ void decrypt_and_print2(int to_decryp[]) {
 
 }
 
+void quiz20(int to_decryp[],int cmp_decryp[],int to_size, int cmp_size) {
+
+//   if ( byte_140003020[*(unsigned __int8 *)(a1 + i)] != byte_140003000[i] )
+
+    for (int i = 0; i < to_size; i++) {
+        for(int j = 0 ; j<cmp_size;j++){
+            if(to_decryp[i]==cmp_decryp[j]){
+                // printf("%d , %d \n",i,j);
+                printf("%c",j);
+            }
+        }
+
+    }
+
+
+}
+
 #endif // DECRYPT_H
