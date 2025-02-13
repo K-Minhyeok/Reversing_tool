@@ -40,8 +40,23 @@ void quiz20(int to_decryp[],int cmp_decryp[],int to_size, int cmp_size) {
         }
 
     }
+}
 
+void quiz22 (int to_decryp[]){
+
+//    if ( (unsigned __int8)(-5 * *(_BYTE *)(a1 + i)) != byte_140003000[i] )
+
+    for(int i=0; i< 21; i++){
+        for (int j=0 ; j<255 ; j++){
+            if(((0xFB * j) & 0xFF) == to_decryp[i]){
+                printf("%c",j);
+            }
+        }
+
+    }
 
 }
+
+
 
 #endif // DECRYPT_H
