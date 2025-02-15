@@ -57,6 +57,22 @@ void quiz22 (int to_decryp[]){
 
 }
 
+void quiz517(char to_decryp[],int size){
+
+    for(int j=0; j<100;j++){
+        printf("%d:   ",j);
+        for (int i=0;i<size;i++){
+            if (to_decryp[i] == 'Z')  
+            to_decryp[i] = 'A'; 
+            else 
+                to_decryp[i]++;
+            printf("%c", to_decryp[i]);
+        }
+        printf("\n");
+    }
+
+}
+
 
 
 #endif // DECRYPT_H
