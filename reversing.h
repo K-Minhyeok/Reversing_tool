@@ -73,6 +73,17 @@ void quiz517(char to_decryp[],int size){
 
 }
 
+void quiz559(char to_decryp[] , int size){
+    for(int i=0; i<126; i++){
+        printf("%d:   ",i);
+        for (int j = 0 ; j<size;j++){
+            printf("%c", to_decryp[j] ^ i);
+        }
+        printf("\n");
+
+    }
+}
+
 
 
 #endif // DECRYPT_H
